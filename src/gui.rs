@@ -39,8 +39,8 @@ pub fn run(config: &Config, log_receiver: mpsc::Receiver<String>) {
     let mut wind = Window::default()
         .with_size(660, 600)
         .center_screen()
-        .with_label(&format!("Weylus - {}", env!("CARGO_PKG_VERSION")));
-    wind.set_xclass("weylus");
+        .with_label(&format!("Displaify - {}", env!("CARGO_PKG_VERSION")));
+    wind.set_xclass("displaify");
     wind.set_callback(move |_win| app.quit());
 
     let mut input_access_code = Input::default()

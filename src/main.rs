@@ -40,7 +40,7 @@ fn main() {
         generate(
             shell,
             &mut Config::command(),
-            "weylus",
+            "displaify",
             &mut std::io::stdout(),
         );
         return;

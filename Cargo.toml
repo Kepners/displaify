@@ -1,10 +1,14 @@
 [package]
-name = "weylus"
-version = "0.11.4"
-authors = ["HMH <henry@freedesk.net>"]
+name = "displaify"
+version = "0.1.0"
+authors = ["Kepners <kepners@gmail.com>"]
 license = "AGPL-3.0-or-later"
 edition = "2021"
-description = "Use your iPad or Android tablet as graphic tablet."
+description = "Turn your tablet into a second display for Windows via WiFi or USB."
+repository = "https://github.com/Kepners/displaify"
+homepage = "https://github.com/Kepners/displaify"
+keywords = ["display", "tablet", "second-screen", "wireless", "usb"]
+categories = ["multimedia", "graphics"]
 
 [dependencies]
 autopilot = { git = "https://github.com/H-M-H/autopilot-rs.git", rev = "63eed09c715bfb665bb23172a3930a528e11691c" }
@@ -62,17 +66,17 @@ ffmpeg-system = []
 va-static = []
 
 [package.metadata.bundle]
-name = "Weylus"
-identifier = "io.github.h-m-h.weylus"
+name = "Displaify"
+identifier = "com.kepners.displaify"
 
 [package.metadata.deb]
-name = "Weylus"
+name = "Displaify"
 section = "graphics"
 priority = "optional"
 assets = [
-    ["target/release/weylus", "usr/bin/weylus", "755"],
-    ["weylus.desktop", "usr/share/applications/weylus.desktop", "755"],
-    ["Readme.md", "usr/share/doc/weylus/README", "644"],
+    ["target/release/displaify", "usr/bin/displaify", "755"],
+    ["displaify.desktop", "usr/share/applications/displaify.desktop", "755"],
+    ["README.md", "usr/share/doc/displaify/README", "644"],
 ]
 
 [profile.release]
