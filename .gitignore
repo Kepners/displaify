@@ -5,7 +5,7 @@ node_modules/
 # Build outputs
 dist/
 build/
-target/
+/target
 *.exe
 *.dll
 *.so
@@ -36,3 +36,15 @@ Desktop.ini
 .claude/sessions/*.md
 .claude/incidents/*.md
 project-memory.json
+
+# Weylus build artifacts
+/deps/ffmpeg
+/deps/x264
+/deps/dist*
+/deps/nv-codec-headers
+/deps/libva
+c_helper/target
+c_helper/Cargo.lock
+*.js
+*.js.map
+*.tar.gz
