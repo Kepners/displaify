@@ -33,6 +33,7 @@ Thumbs.db
 Desktop.ini
 
 # Project specific
+.claude/settings.local.json
 .claude/sessions/*.md
 .claude/incidents/*.md
 project-memory.json

@@ -1,4 +1,12 @@
-# Displaify Development Guide
+﻿# Displaify Development Guide
+
+<!-- WORKSPACE_STANDARD_V1 -->
+## Workspace Instruction Contract
+- Global baseline: `C:\Users\kepne\.claude\CLAUDE.md`.
+- Project overlay: `./CLAUDE.md` (this file).
+- Repo-local runtime permissions: `./.claude/settings.local.json`.
+- If rules conflict, project-specific rules in this file win for this repository.
+- Keep project architecture, incidents, and operating procedures in this repo and `./.claude/`.
 
 ## What is Displaify?
 
@@ -83,7 +91,7 @@
 4. **Talk like a human** - Not robotic
 
 **EVERY GIT COMMIT MUST:**
-- **Start with emoji** - Example: `🔌 feat: USB connection support`
+- **Start with emoji** - Example: `ðŸ”Œ feat: USB connection support`
 
 ---
 
@@ -131,5 +139,59 @@
 
 ---
 
+## Available Skills
+
+### CCC - Claude Code Construction (`/ccc:`)
+- `/ccc:md` - Managing Director
+- `/ccc:pm` - Project Manager
+- `/ccc:production` - Production Engineer
+- `/ccc:technical` - CTO (architecture)
+- `/ccc:support` - Customer Services
+
+### CS - Claude Social (`/cs:`)
+- `/cs:linkedin` - Post to LinkedIn
+- `/cs:substack` - Create Substack drafts
+- `/cs:x` - Post tweets/threads to X
+
+### CU - Claude Utilities (`/cu:`)
+- `/cu:clean-claude` - Analyze & slim down bloated CLAUDE.md files
+- `/cu:audit-workspaces` - Audit all workspace CLAUDE.md files
+
+### SC - SuperClaude (`/sc:`)
+- `/sc:implement` - Feature implementation
+- `/sc:analyze` - Code analysis
+- `/sc:build` - Build and compile projects
+- `/sc:test` - Run tests with coverage
+- `/sc:git` - Git operations
+
+---
+
+## MCP Servers Available
+
+- `mcp__github__*` - Repos, issues, commits, releases
+- `mcp__duckduckgo-search__*` - Web search
+- `mcp__ref__*` - Documentation search
+- `mcp__sequential-thinking__*` - Complex problem solving
+- `mcp__google-search__*` - Google search
+
+---
+
+---
+
+## Git & Deploy Workflow
+
+**Branch:** `main` (single branch — dev and deploy are the same)
+
+```bash
+git add <files>
+git commit -m "🔥 feat/fix: description"
+git push origin main
+```
+
+Never push to a different branch expecting the live site to update.
+
+---
+
 *Created: 2026-01-31*
-*Last Updated: 2026-01-31*
+*Last Updated: 2026-02-01*
+
